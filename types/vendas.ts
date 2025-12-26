@@ -40,6 +40,8 @@ export interface HistoricoEstoque {
   ingrediente_id: string
   tipo_movimentacao: 'entrada_compra' | 'saida_venda' | 'ajuste_manual'
   quantidade: number
+  quantidade_anterior?: number | null
+  quantidade_nova?: number | null
   venda_id?: string
   observacao?: string
   data_movimentacao: string
