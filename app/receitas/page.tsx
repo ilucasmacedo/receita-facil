@@ -861,6 +861,7 @@ export default function ReceitasPage() {
           <button
             type="submit"
             disabled={saving || ingredientesSelecionados.length === 0}
+            data-tour="botao-nova-receita"
             className="w-full flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-6 rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {saving ? (

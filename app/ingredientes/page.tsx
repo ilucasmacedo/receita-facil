@@ -1224,6 +1224,7 @@ Leite,5.50,1,L
           <button
             type="submit"
             disabled={saving}
+            data-tour="botao-adicionar-insumo"
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium py-3 sm:py-2 px-6 rounded-md transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {saving ? (

@@ -8,11 +8,11 @@ import { useAuth } from '@/hooks/useAuth'
 import { supabase } from '@/lib/supabase'
 
 const navItems = [
-  { href: '/', label: 'Dashboard' },
-  { href: '/ingredientes', label: 'Insumos' },
-  { href: '/receitas', label: 'Modelos' },
-  { href: '/produtos', label: 'Produtos' },
-  { href: '/vendas', label: 'Vendas' },
+  { href: '/', label: 'Dashboard', tourId: 'menu-dashboard' },
+  { href: '/ingredientes', label: 'Insumos', tourId: 'menu-insumos' },
+  { href: '/receitas', label: 'Modelos', tourId: 'menu-receitas' },
+  { href: '/produtos', label: 'Produtos', tourId: 'menu-produtos' },
+  { href: '/vendas', label: 'Vendas', tourId: 'menu-vendas' },
 ]
 
 export default function Navbar() {
@@ -50,6 +50,7 @@ export default function Navbar() {
                     <Link
                       key={item.href}
                       href={item.href}
+                      data-tour={item.tourId}
                       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                         isActive
                           ? 'bg-orange-100 text-orange-700'
@@ -105,6 +106,7 @@ export default function Navbar() {
                       key={item.href}
                       href={item.href}
                       onClick={fecharMenu}
+                      data-tour={item.tourId}
                       className={`block px-4 py-3 rounded-md text-base font-medium transition-colors ${
                         isActive
                           ? 'bg-orange-100 text-orange-700'
