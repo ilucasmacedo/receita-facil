@@ -363,7 +363,7 @@ export default function ProdutosPage() {
                     <div className="p-8 text-center text-gray-500 bg-gray-50 rounded-lg">
                       <Package className="h-16 w-16 mx-auto mb-4 text-gray-300" />
                       <p className="mb-2">Nenhum produto em estoque</p>
-                      <p className="text-sm mb-4">Clique no botão "Produzir" acima para fabricar produtos</p>
+                      <p className="text-sm mb-4">Clique no botão &quot;Produzir&quot; acima para fabricar produtos</p>
                       <button
                         onClick={() => setAbaAtiva('producao')}
                         className="inline-flex items-center gap-2 px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-md transition-colors"
@@ -475,7 +475,7 @@ export default function ProdutosPage() {
                     <div className="p-8 text-center text-gray-500 bg-gray-50 rounded-lg">
                       <Factory className="h-16 w-16 mx-auto mb-4 text-gray-300" />
                       <p className="mb-2">Nenhum modelo cadastrado</p>
-                      <p className="text-sm mb-4">Crie modelos em "Modelos" primeiro</p>
+                      <p className="text-sm mb-4">Crie modelos em &quot;Modelos&quot; primeiro</p>
                       <Link
                         href="/receitas"
                         className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors"
