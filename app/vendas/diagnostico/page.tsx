@@ -44,10 +44,19 @@ export default function DiagnosticoVendasPage() {
 
       // 2. Verificar se a função existe
       addLog('\n2️⃣ Verificando função deduzir_estoque_venda...')
-      const { data: funcoes, error: funcError } = await supabase
-        .rpc('deduzir_estoque_venda', { venda_id_param: '00000000-0000-0000-0000-000000000000' })
-        .then(() => ({ data: true, error: null }))
-        .catch((err) => ({ data: null, error: err }))
+      let funcData: any = null
+      let funcError: any = null
+
+      try {
+        const { data, error } = await supabase
+          .rpc('deduzir_estoque_venda', { venda_id_param: '00000000-0000-0000-0000-000000000000' })
+
+        funcData = data ?? true
+        funcError = error
+      } catch (err: any) {
+        funcData = null
+        funcError = err
+      }
 
       if (funcError && funcError.message.includes('function') && funcError.message.includes('does not exist')) {
         addLog('   ❌ Função deduzir_estoque_venda NÃO existe')
