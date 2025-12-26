@@ -1856,7 +1856,7 @@ Leite,5.50,1,L
                           <li>Salve e importe novamente</li>
                         </ol>
                         <p className="mt-2 text-xs italic">
-                          Alternativa: Use o Excel e ao salvar escolha "CSV UTF-8 (separado por vírgulas)"
+                          Alternativa: Use o Excel e ao salvar escolha &quot;CSV UTF-8 (separado por vírgulas)&quot;
                         </p>
                       </details>
                     </div>

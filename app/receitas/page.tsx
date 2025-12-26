@@ -1125,7 +1125,7 @@ export default function ReceitasPage() {
                   disabled={saving}
                 />
                 <p className="text-xs text-gray-500 mt-1">
-                  Exemplos: "bolo inteiro", "cupcake", "porção de 200g", "pote"
+                  Exemplos: &quot;bolo inteiro&quot;, &quot;cupcake&quot;, &quot;porção de 200g&quot;, &quot;pote&quot;
                 </p>
               </div>
 

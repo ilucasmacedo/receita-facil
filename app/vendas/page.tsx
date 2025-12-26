@@ -246,7 +246,7 @@ export default function VendasPage() {
               <div className="p-8 text-center text-gray-500">
                 <ShoppingCart className="h-16 w-16 mx-auto mb-4 text-gray-300" />
                 <p className="mb-2">Nenhum item adicionado</p>
-                <p className="text-sm">Clique em "Adicionar Produto" para começar</p>
+                <p className="text-sm">Clique em &quot;Adicionar Produto&quot; para começar</p>
               </div>
             ) : (
               <div className="divide-y divide-gray-200">

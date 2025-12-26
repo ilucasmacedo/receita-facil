@@ -272,7 +272,7 @@ export default function DiagnosticoVendasPage() {
                 <strong>⚠️ Nenhuma venda registrada</strong><br />
                 As tabelas existem, mas você ainda não registrou nenhuma venda.<br />
                 <br />
-                <strong>Ação:</strong> Vá em "Vendas" e registre uma venda para testar.
+                <strong>Ação:</strong> Vá em &quot;Vendas&quot; e registre uma venda para testar.
               </p>
             </div>
           )}
