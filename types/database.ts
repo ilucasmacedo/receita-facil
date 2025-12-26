@@ -32,6 +32,8 @@ export interface Receita {
   quantidade_em_estoque?: number
   estoque_minimo_produtos?: number
   ativo?: boolean
+  data_desativacao?: string | null
+  motivo_desativacao?: string | null
   created_at?: string
 }
 
