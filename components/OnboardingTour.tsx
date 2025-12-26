@@ -31,9 +31,7 @@ export default function OnboardingTour() {
         {
           popover: {
             title: '🎉 Bem-vindo ao Receita Fácil!',
-            description: 'Vamos te guiar para criar sua primeira receita em poucos passos. Leva apenas 2 minutos!',
-            side: "center",
-            align: 'center'
+            description: 'Vamos te guiar para criar sua primeira receita em poucos passos. Leva apenas 2 minutos!'
           }
         },
         {
@@ -89,8 +87,7 @@ export default function OnboardingTour() {
           element: '[data-tour="menu-dashboard"]',
           popover: {
             title: '🎂 Pronto! Você já sabe o básico',
-            description: 'Explore o Dashboard para ver gráficos, lucros e alertas de estoque. Boas vendas! 💚',
-            side: 'bottom',
+            description: 'Explore o Dashboard para ver gráficos, lucros e alertas de estoque. Boas vendas! 💚'
           }
         },
       ]
