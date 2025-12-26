@@ -300,7 +300,7 @@ export default function EstoquePage() {
                                   {h.tipo_movimentacao === 'entrada_compra' ? '+' : '-'}
                                   {h.quantidade.toFixed(2)} {ingrediente.unidade}
                                 </p>
-                                {h.quantidade_anterior !== null && h.quantidade_nova !== null && (
+                                {h.quantidade_anterior != null && h.quantidade_nova != null && (
                                   <p className="text-xs text-gray-500">
                                     {h.quantidade_anterior.toFixed(2)} → {h.quantidade_nova.toFixed(2)}
                                   </p>
